@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Accordion(아코디언) 메뉴 만들기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이번 프로젝트는 리액트 훅에 익숙해지고 
 
-## Available Scripts
+데이터와 이벤트의 흐름을 좀 더 알기 위해 만들어 봤다.
 
-In the project directory, you can run:
 
-### `npm start`
+## 기능
+#### -입력
+입력력은 셀렉트 기능으로 주제를 선택할 수 있다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+만약 원하는 주제가 없다면 직접 입력하면 된다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+주제를 입력했다면 세부 내용을 작성하면 된다.
 
-### `npm test`
+#### -메뉴 리스트 (아코디언)
+상단에서 입력을 완료하고 추가 버튼을 클릭하면 입력한 주제가 만들 어진다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+만들어진 주제안 내용의 개수도 표시되어 있다.
 
-### `npm run build`
+메뉴를 클릭하면 세부 내용들이 나오고 다시 클릭하면 사라진다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 예외 처리
+예외 처리는 메뉴 추가 시 공백만 막았다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+디테일하게 가면 모음, 자음만 작성하는 것도 막아야 하는데
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+일단은 리액트 훅에 익숙해지는 것이 목표라 이 정도에서 만족했다.
 
-### `npm run eject`
+## 느낀 점
+이벤트 발생 시 넣고 싶은 애니메이션이 많았지만 아직 스타일드 컴포넌트를 써본 적이 없어 불가능했다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+다음 프로젝트부터는 스타일드 컴포넌트를 적용해볼 예정이다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+그리고 최적화도 한 번 해볼 생각이다.

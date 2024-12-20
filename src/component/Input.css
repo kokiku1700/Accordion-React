@@ -1,0 +1,43 @@
+.Input {
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 20%;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);   
+
+}
+
+.input-wrap {
+    width: 25%;
+    display: flex;
+}
+
+.input-wrap span {
+    white-space: nowrap;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 3% 2%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);   
+}
+
+button {
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);   
+    cursor: pointer;
+}
